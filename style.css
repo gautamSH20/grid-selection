@@ -1,0 +1,45 @@
+body {
+  background-color: hsl(210, 46%, 95%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+main {
+  margin-top: 100px;
+  border: 1px solid black;
+  height: 100%;
+  width: 80%;
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 20px;
+}
+
+main > div {
+  border-radius: 10px;
+}
+.img1 {
+  display: flex;
+}
+img {
+  margin-right: 10px;
+  border-radius: 50% 50%;
+  border: 1px solid white;
+}
+header {
+  font-weight: 600;
+}
+.dan {
+  color: white;
+
+  background-color: hsl(263, 55%, 52%);
+  grid-row: 1;
+  grid-column: 1 / 2;
+}
+.kira {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+}
